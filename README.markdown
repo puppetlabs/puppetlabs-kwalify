@@ -14,7 +14,12 @@ Please see the included Apache Software License for more legal details regarding
 
 From github, download the module into your modulepath on your Puppetmaster. If you are not sure where your module path is try this command:
 
-  puppet --configprint modulepath
+    puppet --configprint modulepath
+
+You will also need the kwalify gem. You can do this using your OS, or using the gem
+command:
+
+    gem install kwalify
 
 Depending on the version of Puppet, you may need to restart the puppetmasterd (or Apache) process before the functions will work.
 
